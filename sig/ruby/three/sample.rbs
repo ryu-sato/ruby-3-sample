@@ -1,8 +1,11 @@
 module Ruby
-  module 3
+  module Three
     module Sample
       VERSION: String
       # See the writing guide of rbs: https://github.com/ruby/rbs#guides
+
+      class Error < StandardError
+      end
     end
   end
 end
