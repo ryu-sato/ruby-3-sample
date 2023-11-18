@@ -1,35 +1,40 @@
 # Ruby::Three::Sample
 
-TODO: Delete this and the text below, and describe your gem
+Ruby3 の Sandbox
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/ruby/three/sample`. To experiment with that code, run `bin/console` for an interactive prompt.
+- TypeProf LSP モードが起動しない
 
-## Installation
-
-TODO: Replace `UPDATE_WITH_YOUR_GEM_NAME_PRIOR_TO_RELEASE_TO_RUBYGEMS_ORG` with your gem name right after releasing it to RubyGems.org. Please do not do it earlier due to security reasons. Alternatively, replace this section with instructions to install your gem from git if you don't plan to release to RubyGems.org.
-
-Install the gem and add to the application's Gemfile by executing:
-
-    $ bundle add UPDATE_WITH_YOUR_GEM_NAME_PRIOR_TO_RELEASE_TO_RUBYGEMS_ORG
-
-If bundler is not being used to manage dependencies, install the gem by executing:
-
-    $ gem install UPDATE_WITH_YOUR_GEM_NAME_PRIOR_TO_RELEASE_TO_RUBYGEMS_ORG
-
-## Usage
-
-TODO: Write usage instructions here
-
-## Development
-
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake test` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
-
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and the created tag, and push the `.gem` file to [rubygems.org](https://rubygems.org).
-
-## Contributing
-
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/ruby-3-sample.
-
-## License
-
-The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
+```
+[vscode] Try to start TypeProf for IDE
+[vscode] typeprof version: typeprof 0.21.8
+[vscode] Starting Ruby TypeProf (typeprof 0.21.8)...
+[Info  - 5:08:56 PM] bundler: failed to load command: typeprof (/usr/local/bundle/bin/typeprof)
+[Info  - 5:08:56 PM] /usr/local/lib/ruby/3.1.0/socket.rb:689:in `bind': Cannot assign requested address - bind(2) for [::1]:38185 (Errno::EADDRNOTAVAIL)
+[Info  - 5:08:56 PM] 	from /usr/local/lib/ruby/3.1.0/socket.rb:689:in `block in ip_sockets_port0'
+[Info  - 5:08:56 PM] 	from /usr/local/lib/ruby/3.1.0/socket.rb:674:in `each'
+[Info  - 5:08:56 PM] 	from /usr/local/lib/ruby/3.1.0/socket.rb:674:in `ip_sockets_port0'
+[Info  - 5:08:56 PM] 	from /usr/local/lib/ruby/3.1.0/socket.rb:707:in `tcp_server_sockets_port0'
+[Info  - 5:08:56 PM] 	from /usr/local/lib/ruby/3.1.0/socket.rb:758:in `tcp_server_sockets'
+[Info  - 5:08:56 PM] 	from /usr/local/bundle/gems/typeprof-0.21.8/lib/typeprof/lsp.rb:16:in `start_lsp_server'
+[Info  - 5:08:56 PM] 	from /usr/local/bundle/gems/typeprof-0.21.8/exe/typeprof:7:in `<top (required)>'
+[Info  - 5:08:56 PM] 	from /usr/local/bundle/bin/typeprof:25:in `load'
+[Info  - 5:08:56 PM] 	from /usr/local/bundle/bin/typeprof:25:in `<top (required)>'
+[Info  - 5:08:56 PM] 	from /usr/local/bundle/gems/bundler-2.4.10/lib/bundler/cli/exec.rb:58:in `load'
+[Info  - 5:08:56 PM] 	from /usr/local/bundle/gems/bundler-2.4.10/lib/bundler/cli/exec.rb:58:in `kernel_load'
+[Info  - 5:08:56 PM] 	from /usr/local/bundle/gems/bundler-2.4.10/lib/bundler/cli/exec.rb:23:in `run'
+[Info  - 5:08:56 PM] 	from /usr/local/bundle/gems/bundler-2.4.10/lib/bundler/cli.rb:492:in `exec'
+[Info  - 5:08:56 PM] 	from /usr/local/bundle/gems/bundler-2.4.10/lib/bundler/vendor/thor/lib/thor/command.rb:27:in `run'
+[Info  - 5:08:56 PM] 	from /usr/local/bundle/gems/bundler-2.4.10/lib/bundler/vendor/thor/lib/thor/invocation.rb:127:in `invoke_command'
+[Info  - 5:08:56 PM] 	from /usr/local/bundle/gems/bundler-2.4.10/lib/bundler/vendor/thor/lib/thor.rb:392:in `dispatch'
+[Info  - 5:08:56 PM] 	from /usr/local/bundle/gems/bundler-2.4.10/lib/bundler/cli.rb:34:in `dispatch'
+[Info  - 5:08:56 PM] 	from /usr/local/bundle/gems/bundler-2.4.10/lib/bundler/vendor/thor/lib/thor/base.rb:485:in `start'
+[Info  - 5:08:56 PM] 	from /usr/local/bundle/gems/bundler-2.4.10/lib/bundler/cli.rb:28:in `start'
+[Info  - 5:08:56 PM] 	from /usr/local/bundle/gems/bundler-2.4.10/exe/bundle:45:in `block in <top (required)>'
+[Info  - 5:08:56 PM] 	from /usr/local/bundle/gems/bundler-2.4.10/lib/bundler/friendly_errors.rb:117:in `with_friendly_errors'
+[Info  - 5:08:56 PM] 	from /usr/local/bundle/gems/bundler-2.4.10/exe/bundle:33:in `<top (required)>'
+[Info  - 5:08:56 PM] 	from /usr/local/bundle/bin/bundle:25:in `load'
+[Info  - 5:08:56 PM] 	from /usr/local/bundle/bin/bundle:25:in `<main>'
+[Error - 5:08:56 PM] Starting client failed
+error code 1
+[vscode] Failed to start Ruby TypeProf: error code 1
+```
