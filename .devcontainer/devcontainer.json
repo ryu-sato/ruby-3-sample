@@ -40,7 +40,7 @@
         // useful for ruby
         // RBS
         "soutaro.steep-vscode",
-        "mame.ruby-typeprof"
+        // "mame.ruby-typeprof"
       ]
     }
   }

@@ -17,3 +17,5 @@ gems:
   # If you want to avoid installing rbs files for gems, you can specify them here.
   - name: steep
     ignore: true
+  - name: rbs
+    ignore: true

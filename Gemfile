@@ -11,8 +11,8 @@ gem "minitest", "~> 5.0"
 
 gem "rubocop", "~> 1.21"
 
-gem "rbs", "~> 1.8.0"
+gem "rbs"
 
-gem "typeprof", "0.21.8"
+gem "typeprof"
 
 gem "steep"

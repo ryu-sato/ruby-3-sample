@@ -1,20 +1,6 @@
 ---
-sources:
-- type: git
-  name: ruby/gem_rbs_collection
-  remote: https://github.com/ruby/gem_rbs_collection.git
-  revision: main
-  repo_dir: gems
 path: ".gem_rbs_collection"
 gems:
-- name: activesupport
-  version: '7.0'
-  source:
-    type: git
-    name: ruby/gem_rbs_collection
-    revision: 25286c51a19927f28623aee3cd36655f902399ba
-    remote: https://github.com/ruby/gem_rbs_collection.git
-    repo_dir: gems
 - name: ast
   version: '2.4'
   source:
@@ -23,50 +9,18 @@ gems:
     revision: 25286c51a19927f28623aee3cd36655f902399ba
     remote: https://github.com/ruby/gem_rbs_collection.git
     repo_dir: gems
-- name: base64
+- name: fileutils
   version: '0'
   source:
     type: stdlib
-- name: bigdecimal
-  version: '0'
-  source:
-    type: stdlib
-- name: concurrent-ruby
-  version: '1.1'
-  source:
-    type: git
-    name: ruby/gem_rbs_collection
-    revision: 25286c51a19927f28623aee3cd36655f902399ba
-    remote: https://github.com/ruby/gem_rbs_collection.git
-    repo_dir: gems
-- name: connection_pool
-  version: '2.4'
-  source:
-    type: git
-    name: ruby/gem_rbs_collection
-    revision: 25286c51a19927f28623aee3cd36655f902399ba
-    remote: https://github.com/ruby/gem_rbs_collection.git
-    repo_dir: gems
-- name: i18n
-  version: '1.10'
-  source:
-    type: git
-    name: ruby/gem_rbs_collection
-    revision: 25286c51a19927f28623aee3cd36655f902399ba
-    remote: https://github.com/ruby/gem_rbs_collection.git
-    repo_dir: gems
 - name: json
   version: '0'
   source:
     type: stdlib
-- name: listen
-  version: '3.2'
+- name: minitest
+  version: '0'
   source:
-    type: git
-    name: ruby/gem_rbs_collection
-    revision: 25286c51a19927f28623aee3cd36655f902399ba
-    remote: https://github.com/ruby/gem_rbs_collection.git
-    repo_dir: gems
+    type: stdlib
 - name: mutex_m
   version: '0'
   source:
@@ -103,10 +57,6 @@ gems:
     revision: 25286c51a19927f28623aee3cd36655f902399ba
     remote: https://github.com/ruby/gem_rbs_collection.git
     repo_dir: gems
-- name: rbs
-  version: 2.0.0
-  source:
-    type: rubygems
 - name: regexp_parser
   version: '2.8'
   source:
@@ -131,39 +81,4 @@ gems:
     revision: 25286c51a19927f28623aee3cd36655f902399ba
     remote: https://github.com/ruby/gem_rbs_collection.git
     repo_dir: gems
-- name: date
-  version: '0'
-  source:
-    type: stdlib
-- name: logger
-  version: '0'
-  source:
-    type: stdlib
-- name: monitor
-  version: '0'
-  source:
-    type: stdlib
-- name: singleton
-  version: '0'
-  source:
-    type: stdlib
-- name: time
-  version: '0'
-  source:
-    type: stdlib
-- name: securerandom
-  version: '0'
-  source:
-    type: stdlib
-- name: erb
-  version: '0'
-  source:
-    type: stdlib
-- name: timeout
-  version: '0'
-  source:
-    type: stdlib
-- name: fileutils
-  version: '0'
-  source:
-    type: stdlib
+gemfile_lock_path: Gemfile.lock
